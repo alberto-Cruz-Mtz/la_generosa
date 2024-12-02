@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" id="toolbar">
+    <ion-img slot="start" src="../../assets/logo.png"></ion-img>
+    <ion-title color="light"> La generosa </ion-title>
+    <ion-back-button
+      icon="arrow-back-circle-outline"
+      shape="round"
+      color="light"
+      slot="end"
+    >
+    </ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div [id]="'background'">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" [className]="'form'">
+      <h1>Bienvenido devuelta</h1>
+      <ion-input
+        type="email"
+        fill="outline"
+        labelPlacement="stacked"
+        label="Correo"
+        formControlName="email"
+      ></ion-input>
+      <ion-note
+        *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched"
+        color="danger"
+      >
+        Por favor, ingresa un correo válido.
+      </ion-note>
+      <ion-input
+        formControlName="password"
+        type="{{typeInput}}"
+        fill="outline"
+        label="Password"
+        labelPlacement="stacked"
+        (click)="togglePassword()"
+      >
+        <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+        <ion-button fill="clear" slot="end" aria-label="Show/hide">
+          <ion-icon
+            slot="icon-only"
+            name="{{icon}}"
+            aria-hidden="true"
+          ></ion-icon>
+        </ion-button>
+      </ion-input>
+      <ion-note
+        *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched"
+        color="danger"
+      >
+        La contraseña debe tener al menos 6 caracteres.
+      </ion-note>
+      <ion-button type="submit" expand="block" color="warning"
+        >Iniciar Sesion</ion-button
+      >
+      <ion-modal (ionModalDidDismiss)="error = false" [isOpen]="error">
+        <ng-template>
+          <ion-content [className]="'modal-content'">
+            <ion-icon
+              size="large"
+              color="danger"
+              name="alert-circle-outline"
+            ></ion-icon>
+            <br />
+            <ion-label color="danger">{{ message }}</ion-label>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" id="toolbar">
+    <ion-img slot="start" src="../../assets/logo.png"></ion-img>
+    <ion-title color="light"> La generosa </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div [className]="'welcome'">
+    <ion-img src="../../assets/logo.png"></ion-img>
+    <ion-label color="success">Bienvenido {{username}}</ion-label>
+    <p>
+      Por el momento esta página se encuentra en desarollo, así que vuelve más
+      tarde.
+    </p>
+
+    <ion-button routerLink="/home">
+      <ion-icon name="home"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

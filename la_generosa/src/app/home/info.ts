@@ -1,0 +1,130 @@
+export const info = [
+  {
+    id: 1,
+    title: 'Aguacate',
+    img: '../../assets/img/aguacate.png',
+    price: 4.99,
+  },
+  {
+    id: 2,
+    title: 'Banana',
+    img: '../../assets/img/banane.png',
+    price: 4.99,
+  },
+  {
+    id: 3,
+    title: 'Cebolla',
+    img: '../../assets/img/cebolla.png',
+    price: 4.99,
+  },
+  {
+    id: 4,
+    title: 'Chayote',
+    img: '../../assets/img/Chayote.png',
+    price: 4.99,
+  },
+  {
+    id: 5,
+    title: 'Chile habanero',
+    img: '../../assets/img/Chile-Habanero.png',
+    price: 4.99,
+  },
+  {
+    id: 6,
+    title: 'Coliflor',
+    img: '../../assets/img/coliflor.png',
+    price: 4.99,
+  },
+  {
+    id: 7,
+    title: 'Durazno',
+    img: '../../assets/img/Durazno.png',
+    price: 4.99,
+  },
+
+  {
+    id: 8,
+    title: 'Fresa',
+    img: '../../assets/img/fresa.png',
+    price: 4.99,
+  },
+  {
+    id: 9,
+    title: 'Kiwi',
+    img: '../../assets/img/kiwi.png',
+    price: 4.99,
+  },
+  {
+    id: 10,
+    title: 'Lechuga',
+    img: '../../assets/img/lechuga.png',
+    price: 4.99,
+  },
+  {
+    id: 11,
+    title: 'Limon persa',
+    img: '../../assets/img/Limon-persa.png',
+    price: 4.99,
+  },
+  {
+    id: 12,
+    title: 'Mango',
+    img: '../../assets/img/mango.png',
+    price: 4.99,
+  },
+  {
+    id: 13,
+    title: 'Melon',
+    img: '../../assets/img/melon.png',
+    price: 4.99,
+  },
+  {
+    id: 14,
+    title: 'Naranja',
+    img: '../../assets/img/naranja.jpg',
+    price: 4.99,
+  },
+  {
+    id: 15,
+    title: 'Papa',
+    img: '../../assets/img/papa.png',
+    price: 4.99,
+  },
+  {
+    id: 16,
+    title: 'Papaya',
+    img: '../../assets/img/papayas.png',
+    price: 4.99,
+  },
+  {
+    id: 17,
+    title: 'Pomelo',
+    img: '../../assets/img/pomme.png',
+    price: 4.99,
+  },
+  {
+    id: 18,
+    title: 'Sandia',
+    img: '../../assets/img/sandia.png',
+    price: 4.99,
+  },
+  {
+    id: 19,
+    title: 'Tomate',
+    img: '../../assets/img/tomaterico.png',
+    price: 4.99,
+  },
+
+  {
+    id: 20,
+    title: 'Uva',
+    img: '../../assets/img/uva.png',
+    price: 4.99,
+  },
+  {
+    id: 21,
+    title: 'Zanahoria',
+    img: '../../assets/img/zanahoria.png',
+    price: 4.99,
+  },
+];

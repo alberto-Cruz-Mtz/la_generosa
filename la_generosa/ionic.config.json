@@ -1,0 +1,7 @@
+{
+  "name": "la_generosa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
